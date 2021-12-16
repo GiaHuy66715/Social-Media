@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media</title>
+    <script src="https://kit.fontawesome.com/605f8fc56d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./reset.css"/>
+    <link rel="stylesheet" href="./style.css"/>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <ul class="header-nav">
+        <li class="nav-item">
+          <a href="#">
+            <i class="fas fa-home"></i>
+            Logo
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#"><i class="fas fa-globe-americas"></i></a>
+        </li>
+        <li class="nav-item">
+          <a href="#"><i class="fas fa-user"></i></a>
+        </li>
+        <li class="nav-item">
+          <a href="#"><i class="fas fa-envelope"></i></a>
+        </li>
+        <li class="nav-item">
+          <a href="#">
+            <div class="header-notification">
+              <i class="fas fa-bell"></i>
+              <span>3</span>
+            </div>
+          </a>
+          <ul class="header-subnav">
+              <li class="subnav-item">
+                <a href="#">
+                  One new friend request
+                </a>
+              </li>
+              <li class="subnav-item">
+                <a href="#">
+                  John Doe posted on your wal
+                </a>
+              </li>
+              <li class="subnav-item">
+                <a href="#">
+                  Jane likes your post
+                </a>
+              </li>
+            </ul>
+        </li>
+        <li class="nav-item">
+          <img src="https://www.w3schools.com/w3images/avatar2.png" alt="User-avatar">
+        </li>
+        <li class="nav-item">
+          <a id="js-btn-dropdown" href="#">
+            <i class="fas fa-bars"></i>
+          </a>
+        </li>
+      </ul>
+      <div style="display: none;" id="js-bars-dropdown" class="bars-dropdown">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">My profile</a>
+      </div>
+    </header>
+    <!-- Main content -->
+    <div class="layout">
+      <!-- Left side -->
+      <div class="left-side">
+        <div class="profile">
+          <h2 class="profile-heading">My Profile</h2>
+          <img
+            src="https://www.w3schools.com/w3images/avatar3.png"
+            alt=""
+            class="profile-image"
+          />
+          <hr />
+          <p class="info">
+            <i class="fas fa-pen-fancy"></i>
+            Designer, UI
+          </p>
+          <p class="info">
+            <i class="fas fa-home"></i>
+            <span>London, UK</span>
+          </p>
+          <p class="info">
+            <i class="fas fa-birthday-cake"></i>
+            April 1, 1988
+          </p>
+        </div>
+
+        <p onclick="openText()" class="personal-use">
+          <i class="fas fa-circle-notch"></i>
+          My Groups
+        </p>
+        <div id="myText">Some text..</div>
+        <p onclick="open_Other_Text()" class="personal-use">
+          <i class="fas fa-calendar-check"></i>
+          My Events
+        </p>
+        <div id="my_Other_Text">Some other text..</div>
+        <p onclick="openImage()" class="personal-use">
+          <i class="fas fa-users"></i>
+          My Photos
+        </p>
+        <div id="myPhotos">
+          <div class="left-photos">
+            <img
+              src="https://www.w3schools.com/w3images/lights.jpg"
+              alt=""
+              class="left-image"
+            />
+            <img
+              src="https://www.w3schools.com/w3images/mountains.jpg"
+              alt=""
+              class="left-image"
+            />
+            <img
+              src="https://www.w3schools.com/w3images/nature.jpg"
+              alt=""
+              class="left-image"
+            />
+          </div>
+          <div class="right-photos">
+            <img
+              src="https://www.w3schools.com/w3images/nature.jpg"
+              alt=""
+              class="right-image"
+            />
+            <img
+              src="https://www.w3schools.com/w3images/forest.jpg"
+              alt=""
+              class="right-image"
+            />
+            <img
+              src="https://www.w3schools.com/w3images/snow.jpg"
+              alt=""
+              class="right-image"
+            />
+          </div>
+        </div>
+        <!-- Interests -->
+        <div class="interests">
+          <p>Interests</p>
+          <span class="interests__tags">News</span>
+          <span class="interests__tags">W3Schools</span>
+          <span class="interests__tags">Labels</span>
+          <span class="interests__tags">Games</span>
+          <span class="interests__tags">Friends</span>
+          <span class="interests__tags">Games</span>
+          <span class="interests__tags">Friends</span>
+          <span class="interests__tags">Food</span>
+          <span class="interests__tags">Design</span>
+          <span class="interests__tags">Art</span>
+          <span class="interests__tags">Photos</span>
+        </div>
+        <!-- Hey -->
+        <div class="hey">
+          <span class="close-btn js-close-btn">
+            <i class="fas fa-times"></i
+          ></span>
+          <h3>Hey!</h3>
+          <p>People are looking at your profile. Find out who.</p>
+        </div>
+      </div>
+
+      <!-- Middle -->
+      <div class="middle">
+        <!-- Social media by w3.css -->
+        <div class="status">
+          <p class="status-heading">Social Media template by w3.css</p>
+          <form>
+            <textarea>Status: Feeling Blue</textarea>
+          </form>
+          <div class="post">
+            <i class="fas fa-pen-fancy"></i>
+            <span>Post</span>
+          </div>
+        </div>
+        <!-- John Doe -->
+        <div class="person">
+          <div class="top">
+            <img
+              src="https://www.w3schools.com/w3images/avatar2.png"
+              alt=""
+              class="avatar"
+            />
+            <h3>John Doe</h3>
+            <span class="post-time">1 min</span>
+          </div>
+          <hr />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <div class="john-doe__image">
+            <img
+              src="https://www.w3schools.com/w3images/lights.jpg"
+              alt=""
+              class="image-item left-image"
+            />
+            <img
+              src="https://www.w3schools.com/w3images/nature.jpg"
+              alt=""
+              class="image-item right-image"
+            />
+          </div>
+          <span class="bottom-box">
+            <i class="fas fa-thumbs-up"></i>
+            Like
+          </span>
+          <span class="bottom-box">
+            <i class="far fa-comment"></i>
+            Comment
+          </span>
+        </div>
+        <div class="person">
+          <div class="top">
+            <img
+              src="https://www.w3schools.com/w3images/avatar5.png"
+              alt=""
+              class="avatar"
+            />
+            <h3>Jane Doe</h3>
+            <span class="post-time">16 min</span>
+          </div>
+          <hr />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <span class="bottom-box">
+            <i class="fas fa-thumbs-up"></i>
+            Like
+          </span>
+          <span class="bottom-box">
+            <i class="far fa-comment"></i>
+            Comment
+          </span>
+        </div>
+        <!-- Angie Jane -->
+        <div class="person">
+          <div class="top">
+            <img
+              src="https://www.w3schools.com/w3images/avatar6.png"
+              alt=""
+              class="avatar"
+            />
+            <h3>Angie Jane</h3>
+            <span class="post-time">32 min</span>
+          </div>
+          <hr />
+          <p>Have you seen this ?</p>
+          <img
+            src="https://www.w3schools.com/w3images/nature.jpg"
+            alt=""
+            class="angie__image"
+          />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <span class="bottom-box">
+            <i class="fas fa-thumbs-up"></i>
+            Like
+          </span>
+          <span class="bottom-box">
+            <i class="far fa-comment"></i>
+            Comment
+          </span>
+        </div>
+      </div>
+      <!-- Right side -->
+      <div class="right-side">
+        <div class="event">
+          <h3>Upcoming Events</h3>
+          <img
+            src="https://www.w3schools.com/w3images/forest.jpg"
+            alt=""
+            class="event-image"
+          />
+          <h4 class="event-title">Holiday</h4>
+          <p class="event-date">Friday 15:00</p>
+          <p class="event-info">Info</p>
+        </div>
+        <div class="friend-request">
+          <h4>Friend Request</h4>
+          <img
+            src="https://www.w3schools.com/w3images/avatar6.png"
+            alt=""
+            class="friend-image"
+          />
+          <p>Jane Doe</p>
+          <div class="request-choice">
+            <i title="Accept" class="fas fa-check"></i>
+            <i title="Decline" class="fas fa-times"></i>
+          </div>
+        </div>
+        <div class="ads">
+          <h3>ADS</h3>
+        </div>
+        <div class="bug">
+          <i class="fas fa-bug"></i>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <h4>Footer</h4>
+      <p>
+        Powered by
+        <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a>
+      </p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
